@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Nunito Sans", sans-serif;
+  text-align: center;
+}
+
+.main {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(32, 32, 32);
+
+  display: flex;
+}
+
+.card {
+  width: 100%;
+  max-width: 400px;
+  background: rgb(70, 70, 70);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  margin: auto;
+  border-radius: 5px;
+  border: 2px dashed gold;
+  overflow: hidden;
+
+  box-shadow: 0 0 20px 0px gold;
+}
+
+.image {
+  width: 100%;
+  display: block;
+}
+
+.head {
+  font-size: 3rem;
+  font-weight: 600;
+  color: black;
+  font-family: "Gochi Hand", cursive;
+}
+
+.des {
+  font-size: 1rem;
+  font-weight: 500;
+  margin-top: 1rem;
+  color: gold;
+}
+
+.des + .des {
+  margin-top: 0.5rem;
+}
+
+.flex {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 0, 0);
+
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+}
+
+.flexItem {
+  color: white;
+  margin: auto;
+}
+
+.grid {
+  width: 100vw;
+  height: 100vh;
+  background: rgb(255, 251, 0);
+
+  display: grid;
+  /* grid-template-columns: repeat(3, 1fr); */
+  grid-template-columns: 1fr 1fr 1fr;
+  /* align-items: center; */
+
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+.gridItem {
+  background: chartreuse;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gridItem1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+
+  column-gap: 1rem;
+  row-gap: 1rem;
+}
+
+@media (max-width: 800px) {
+  .grid {
+    grid-template-columns: 1fr;
+    background: rgb(0, 255, 157);
+  }
+
+  .gridItem1 {
+    grid-template-columns: 1fr;
+  }
+}
